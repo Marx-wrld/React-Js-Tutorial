@@ -27,8 +27,11 @@ we get the; -- webpack(minify, bundle, compile)
             -- compiler(jsx - js)
             -- node package manager
             -- development server
-
+          
+##### Run the following:-
 C:\Users\MARX>npm install create-react-app -g
+          
+****Running          
 npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
 
 changed 67 packages, and audited 68 packages in 20s
@@ -43,25 +46,35 @@ a different dependency.
 
 Run `npm audit` for details.
 
+##### Changing the root directory
+          
 C:\Users\MARX>cd Desktop
 
 C:\Users\MARX\Desktop>
+
+##### Creating our folder
 C:\Users\MARX\Desktop>md React_tutorial
 
+##### Chaning the root directory to our folder
 C:\Users\MARX\Desktop>cd React_tutorial
 
+##### Creating our React app inside this directory
 C:\Users\MARX\Desktop\React_tutorial>create-react-app demo_project
 
-#Let Keyword
+##### Javascript essentials to know
+          
+*****Let Keyword
+          
 console.log("Global scope");
 for (var g_scope = 1; g_scope<5; g_scope++)
 {
   console.log(g_scope);//Global scope
 }
 console.log(g_scope);
-//Returns the g_scope value 5 times because it can be accessed globally
+          
+// Returns the g_scope value 5 times because it can be accessed globally
 
-//Introducing the let keyword
+// Introducing the let keyword
 console.log("Block scope");
 for (let b_scope = 1; b_scope<5; b_scope++)
 {
@@ -69,12 +82,12 @@ for (let b_scope = 1; b_scope<5; b_scope++)
 }
 console.log(b_scope);//Error (Block scope)
 
-#constant keyword
+*****constant keyword
 //const value cannot be changed
 //you can change the properties of object but not reference
 
 
-#function declaration - loads at compile time
+*****function declaration - loads at compile time
 function execute(){ 
    console.log("Hello");
 }
@@ -82,14 +95,15 @@ function execute(){
            >Hello
            <undefined
 
-#function expression - loads at runtime
+*****function expression - loads at runtime
 var execute = functon name(){
     console.log("Bye");
 }
 //returns >execute()
           >Bye
 
-#export keyword
+
+*****export keyword
 Helps us to use one javascript file in another javascript file.
 
 //with default:
@@ -105,7 +119,7 @@ export const status=()=>{
    console.log('Completed');
 }
 
-#import keyword
+*****import keyword
 To include the exported file we use import
 
 //with default
@@ -115,19 +129,21 @@ import academy from './file_name.js';
 import {subject} from './file_name.js';
 import {status} from '.file_name.js';
 
-#class(methods & properties)
+*****class(methods & properties)
+          
 class c_name{
  constructor()
 }
 
-#object(instance of a class)
+*****object(instance of a class)
 const x = new
 c_name();
 
-#Inheritance (inheriting methods & properties)
-super()
+*****Inheritance (inheriting methods & properties)
+- super()
 
-#spread
+*****spread operator
+          
 - used with arrays or objects
 - used to retrieve all values or properties from one array into another
 - represented by three dots(...)
@@ -140,8 +156,9 @@ new_arr
 arr
 > [1,2,3]
 
-#Rest operator
-first,
+*****Rest operator
+          
+first;
 functon sum(a,b){
   return a+b;
 }
@@ -162,7 +179,7 @@ function sum(..args) //give it a name args
 console.log(sum(1,2,3,4)
 //when we console it now returns 10 and thus we can add other numbers.
 
-#destructuring
+*****destructuring
 - A way with which we can extract few elements from the array or few properties from the object.
 var values = [10,20,30];
 [first,,last] = values;
@@ -172,7 +189,7 @@ var values = [10,20,30];
 //hence we have destructured te array
 
 
-#Basics of react
+****Basics of react app
 1. node_modules -all packages used by npm
 2. public - stores anything that we will render
 3. src

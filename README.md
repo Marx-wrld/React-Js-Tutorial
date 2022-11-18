@@ -1,4 +1,5 @@
-- Need to learn and have a better understanding of the prerequisites of HTML, CSS & JAVASCRIPT
+- Welcome to this React Js Tutorial
+- First, you need to learn and have a better understanding of the prerequisites of HTML, CSS & JAVASCRIPT
 
 - Html is the NOUN of a webpage
 - Javascript is the VERB of the webpage because it performs the actions.
@@ -176,4 +177,8 @@ var values = [10,20,30];
 3. src
 4. gitignore- files we want to ignore when exporting
 5. package-json - dependencies and files we need 
+
+- Lastly open the demo_project we created and deleted all files in the src directory apart from the index.js and app.js files
+- You can then copy the simple code in the app.js and index.js files which is simply a div created with a heading parameter inside.
+- Then the root id in the index.html file rendered in the index.js file since it is a global attribute.
  

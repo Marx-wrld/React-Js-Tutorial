@@ -13,7 +13,7 @@ E.g - function fun(){
 // returns hello after every 1sec(1000ms)
 
      clearInterval(1)
-//stops the run
+// stops the run
 
 - linking (<script type="text/javascript" src="demo.js</script>)
 

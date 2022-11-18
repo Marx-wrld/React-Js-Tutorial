@@ -1,4 +1,5 @@
-## React Js Tutorial
+## React Js Tutorial 
+- Also in the React Js.txt file
 #### Welcome to this React Js Tutorial
 - First, you need to learn and have a better understanding of the prerequisites of HTML, CSS & JAVASCRIPT
 

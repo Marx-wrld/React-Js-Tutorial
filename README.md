@@ -75,6 +75,7 @@ console.log(g_scope);
 // Returns the g_scope value 5 times because it can be accessed globally
 
 // Introducing the let keyword
+          
 console.log("Block scope");
 for (let b_scope = 1; b_scope<5; b_scope++)
 {
@@ -83,11 +84,13 @@ for (let b_scope = 1; b_scope<5; b_scope++)
 console.log(b_scope);//Error (Block scope)
 
 *****constant keyword
+          
 //const value cannot be changed
 //you can change the properties of object but not reference
 
 
 *****function declaration - loads at compile time
+          
 function execute(){ 
    console.log("Hello");
 }
@@ -96,6 +99,7 @@ function execute(){
            <undefined
 
 *****function expression - loads at runtime
+          
 var execute = functon name(){
     console.log("Bye");
 }
@@ -104,15 +108,18 @@ var execute = functon name(){
 
 
 *****export keyword
+          
 Helps us to use one javascript file in another javascript file.
 
 //with default:
+          
 const academy ={
     name:"GL";
 }
 export default academy;
 
 //without default:
+          
 export const subject = "React";
 
 export const status=()=>{
@@ -120,12 +127,15 @@ export const status=()=>{
 }
 
 *****import keyword
+          
 To include the exported file we use import
 
 //with default
+          
 import academy from './file_name.js';
 
 //without default
+          
 import {subject} from './file_name.js';
 import {status} from '.file_name.js';
 
@@ -136,10 +146,12 @@ class c_name{
 }
 
 *****object(instance of a class)
+          
 const x = new
 c_name();
 
 *****Inheritance (inheriting methods & properties)
+          
 - super()
 
 *****spread operator
@@ -169,6 +181,7 @@ if we > console.log(1,2,3)
 hence inconveniences us when we want to add other numbers
 
 //So we'll use the rest operator(...)
+          
 function sum(..args) //give it a name args
      let total = 0;
      for(let i in args){
@@ -177,9 +190,11 @@ function sum(..args) //give it a name args
      return total;
 }
 console.log(sum(1,2,3,4)
+          
 //when we console it now returns 10 and thus we can add other numbers.
 
 *****destructuring
+          
 - A way with which we can extract few elements from the array or few properties from the object.
 var values = [10,20,30];
 [first,,last] = values;
